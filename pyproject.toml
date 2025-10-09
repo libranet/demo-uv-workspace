@@ -8,22 +8,24 @@ name = "uv-workspace-demo"
 version = "0.1.0"
 description = "uv workspace demo with namespaced packages."
 readme = "readme.md"
+license = { file = "license.md" }
 requires-python = ">=3.12"
 dependencies = [
     "foobar",    # regular package
-    "foo-sub1",  # 2 namespaced packages
-    "foo-sub2",
+    "foo-sub1",  # namespace package
+    "foo-sub2",  # namespace package
 ]
+
 
 [tool.uv]
 managed = true
 package = false  # the project itself is not a package
 
-[tool.uv.workspace]
-members = ["src/*"]
-# exclude = ["src/uv_workspace_demo"]
-
 [tool.uv.sources]
+# list all your workspace packages by name
 foo-sub1 = { workspace = true }  # Use hyphen here too
 foo-sub2 = { workspace = true }
 foobar = { workspace = true }
+
+[tool.uv.workspace]
+members = ["src/*"]  # wildcards are supported

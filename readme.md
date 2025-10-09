@@ -29,10 +29,10 @@ uv build --all-packages
 ```
 
 
-## Interactive shell
+## Interactive Python-shell
 
-```bash
-uv run python
+Opena shell with `uv run python`
+```python
 >>> import foo
 foo.__path__
 _NamespacePath([
