@@ -23,9 +23,10 @@ package = false  # the project itself is not a package
 
 [tool.uv.sources]
 # list all your workspace packages by name
-foo-sub1 = { workspace = true }  # Use hyphen here too
-foo-sub2 = { workspace = true }
 foobar = { workspace = true }
+foo-sub1 = { workspace = true } 
+foo-sub2 = { workspace = true }
 
 [tool.uv.workspace]
 members = ["src/*"]  # wildcards are supported
+
