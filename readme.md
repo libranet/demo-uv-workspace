@@ -31,7 +31,7 @@ uv build --all-packages
 
 ## Interactive Python-shell
 
-Opena shell with `uv run python`
+Open a shell with `uv run python`:
 ```python
 >>> import foo
 foo.__path__
