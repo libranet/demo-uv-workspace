@@ -45,8 +45,8 @@ install args="":
 
 # build all workspace packages
 [group: 'uv']
-build args="":
+build out_dir="var/dist" args="":
     @ echo "Building all packages..."
-    uv build --all-packages {{args}}
+    uv build --all-packages --out-dir={{out_dir}} {{args}}
 
 
