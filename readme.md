@@ -2,7 +2,10 @@
 
 This project demonstrates a [uv](https://docs.astral.sh/uv/) workspace containing both regular Python packages and namespace packages.
 
-See also https://github.com/astral-sh/uv/issues/6575
+See also
+- https://docs.astral.sh/uv/concepts/build-backend/#namespace-packages
+- https://github.com/astral-sh/uv/issues/6575
+
 
 ## Project Structure
 
@@ -11,6 +14,7 @@ This workspace contains three packages:
 - **foobar** - A regular Python package located in `src/foobar/`
 - **foo.sub1** - A namespace package located in `src/foo-sub1/`
 - **foo.sub2** - A namespace package located in `src/foo-sub2/`
+
 
 ## Installation
 
@@ -27,7 +31,6 @@ This will create a virtual environment and install all packages defined in the w
 ```bash
 uv build --all-packages
 ```
-
 
 ## Interactive Python-shell
 
