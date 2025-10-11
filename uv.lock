@@ -61,7 +61,7 @@ wheels = [
 
 [[package]]
 name = "foo-sub1"
-version = "0.2"
+version = "0.1"
 source = { editable = "src/foo-sub1" }
 dependencies = [
     { name = "pydantic" },
@@ -72,7 +72,7 @@ requires-dist = [{ name = "pydantic", specifier = ">=2.0" }]
 
 [[package]]
 name = "foo-sub2"
-version = "0.1"
+version = "0.2"
 source = { editable = "src/foo-sub2" }
 dependencies = [
     { name = "pydantic" },
