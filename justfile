@@ -50,3 +50,11 @@ build out_dir="var/dist" args="":
     uv build --all-packages --out-dir={{out_dir}} {{args}}
 
 
+# remove generated files
+[group: 'uv']
+clean:
+    rm -fr .venv
+    rm -fr var/cache
+    rm -fr var/dist
+
+alias clear := clean

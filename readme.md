@@ -30,6 +30,19 @@ This will create a virtual environment and install all packages defined in the w
 
 ```bash
 uv build --all-packages
+
+[foo-sub1] Building source distribution...
+[foo-sub2] Building source distribution...
+[foobar] Building source distribution...
+[foo-sub1] Building wheel from source distribution...
+[foobar] Building wheel from source distribution...
+[foo-sub2] Building wheel from source distribution...
+Successfully built var/dist/foo_sub1-0.1.tar.gz
+Successfully built var/dist/foo_sub1-0.1-py3-none-any.whl
+Successfully built var/dist/foo_sub2-0.2.tar.gz
+Successfully built var/dist/foo_sub2-0.2-py3-none-any.whl
+Successfully built var/dist/foobar-0.3.tar.gz
+Successfully built var/dist/foobar-0.3-py3-none-any.whl
 ```
 
 ## Interactive Python-shell
